@@ -1,0 +1,122 @@
+{
+  "sectors": [
+    {
+      "id": "S001",
+      "name": "Secteur Centre-Ville",
+      "coordinates": { "lat": 45.3293, "lng": -73.7469 },
+      "addresses": [
+        "123 rue de la Paix",
+        "456 avenue Principal",
+        "789 boulevard Saint-Louis"
+      ],
+      "collection": {
+        "blue_bin": { "days": ["lundi", "jeudi"], "time_window": "06:00-18:00" },
+        "gray_bin": { "days": ["mercredi"], "time_window": "06:00-18:00" },
+        "brown_bin": { "days": ["vendredi"], "time_window": "06:00-18:00" }
+      }
+    },
+    {
+      "id": "S002",
+      "name": "Secteur Résidentiel Nord",
+      "coordinates": { "lat": 45.3450, "lng": -73.7500 },
+      "addresses": [
+        "111 rue des Érables",
+        "222 chemin de la Forêt",
+        "333 avenue du Nord"
+      ],
+      "collection": {
+        "blue_bin": { "days": ["mardi", "vendredi"], "time_window": "07:00-18:00" },
+        "gray_bin": { "days": ["jeudi"], "time_window": "07:00-18:00" },
+        "brown_bin": { "days": ["samedi"], "time_window": "07:00-18:00" }
+      }
+    },
+    {
+      "id": "S003",
+      "name": "Secteur Industriel Est",
+      "coordinates": { "lat": 45.3150, "lng": -73.7300 },
+      "addresses": [
+        "500 rue de l'Industrie",
+        "600 boulevard Industriel"
+      ],
+      "collection": {
+        "blue_bin": { "days": ["lundi"], "time_window": "05:00-17:00" },
+        "gray_bin": { "days": ["mercredi"], "time_window": "05:00-17:00" },
+        "brown_bin": { "days": ["vendredi"], "time_window": "05:00-17:00" }
+      }
+    }
+  ],
+
+  "geolocation": [
+    {
+      "address": "123 rue de la Paix, Châteauguay",
+      "sector_id": "S001",
+      "latitude": 45.3293,
+      "longitude": -73.7469,
+      "confidence": 0.99
+    },
+    {
+      "address": "456 avenue Principal, Châteauguay",
+      "sector_id": "S001",
+      "latitude": 45.3295,
+      "longitude": -73.7472,
+      "confidence": 0.98
+    },
+    {
+      "address": "111 rue des Érables, Châteauguay",
+      "sector_id": "S002",
+      "latitude": 45.3450,
+      "longitude": -73.7500,
+      "confidence": 0.97
+    },
+    {
+      "address": "222 chemin de la Forêt, Châteauguay",
+      "sector_id": "S002",
+      "latitude": 45.3455,
+      "longitude": -73.7510,
+      "confidence": 0.96
+    },
+    {
+      "address": "500 rue de l'Industrie, Châteauguay",
+      "sector_id": "S003",
+      "latitude": 45.3150,
+      "longitude": -73.7300,
+      "confidence": 0.95
+    }
+  ],
+
+  "collection_status": [
+    {
+      "id": "CS001",
+      "sector_id": "S001",
+      "date": "2026-06-01",
+      "bin_color": "blue",
+      "status": "in_progress",
+      "completion_percentage": 65,
+      "estimated_completion_time": "17:00",
+      "notes": "Léger retard, affluence élevée"
+    },
+    {
+      "id": "CS002",
+      "sector_id": "S001",
+      "date": "2026-06-01",
+      "bin_color": "gray",
+      "status": "completed",
+      "completion_percentage": 100,
+      "completion_time": "14:30",
+      "notes": ""
+    },
+    {
+      "id": "CS003",
+      "sector_id": "S002",
+      "date": "2026-06-01",
+      "bin_color": "blue",
+      "status": "completed",
+      "completion_percentage": 100,
+      "completion_time": "15:45",
+      "notes": ""
+    }
+  ],
+
+  "bin_orders": [],
+  "tickets": []
+}
